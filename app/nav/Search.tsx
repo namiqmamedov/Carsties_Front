@@ -19,6 +19,10 @@ export default function Search() {
     function search() {
         if (pathname !== '/') router.push('/');
         setParams({searchTerm: searchValue});
+
+        // const path = searchValue ? `/?searchTerm=${encodeURIComponent(searchValue)}` : '/';
+
+        // router.push(path);
     }
 
     return (
